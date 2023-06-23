@@ -1,0 +1,80 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.Body {
+  display: flex;
+  margin: auto;
+  width: 237px;
+
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-family: Graduate; 
+}
+
+.Button {
+  width: 237px;
+  height: 100px;
+  flex-shrink: 0; 
+  border-radius: 40px;
+  background: linear-gradient(180deg, #3A38A6 0%, #C242AE 100%);
+  font-size: 20px;
+  font-family: Graduate;
+  margin:auto;
+}
+.Hidden {
+  display: none;
+}
+
+.Title {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-family: Graduate; 
+  margin: auto;
+}
+
+.logo {
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  width: 71px;
+  height: 66px;
+  flex-shrink: 0; 
+  border-radius: 40px;
+}
+
+.CowColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ImgBox{
+  display : flex;
+  margin: 8px;
+}
+
+.Cactus{
+  width: 375px;
+  height: 667px; 
+  object-fit: cover;
+  border-radius: 40px;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
